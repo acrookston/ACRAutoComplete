@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ACRAutoComplete_Example' do
+  pod 'ACRAutoComplete', :path => '../'
+
+  target 'ACRAutoComplete_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
