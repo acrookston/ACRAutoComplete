@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1784B0A59D15939523E5B5C29824D6F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		2CE216C1BA9D9406C0635698AC30F02C /* Pods-ACRAutoComplete_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA64A28324BC744F21DF52CCC62FE36 /* Pods-ACRAutoComplete_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		340242B7B18007DC18ABD0BBB3D70037 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5F92E2B60AFE010A8BBD3259BFE1E1C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		8217F70335D5FA58A9F8048906264B44 /* Pods-ACRAutoComplete_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B0F490EE50DEAF84189AD5FD3B4553 /* Pods-ACRAutoComplete_Example-dummy.m */; };
+		A1C1B7D51DCBDADF00CA930B /* AutoComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CD3CC241EDE7CA4842A421F26E861 /* AutoComplete.swift */; };
+		BD141744BA7953C46551E19DFCC4001A /* Pods-ACRAutoComplete_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FACBD49F3FB6DC26FCAFD15C98653989 /* Pods-ACRAutoComplete_Tests-dummy.m */; };
+		BD8F38B6F4DFE742342DCA102E6D3E1C /* Pods-ACRAutoComplete_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 547F4C5C7D5FF610031D98C5EF33A8C9 /* Pods-ACRAutoComplete_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEDF6FE2556CC647EB6069D73F2C3FF8 /* ACRAutoComplete-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6907EC3892E16242F5E133ED3F24CDA /* ACRAutoComplete-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA4866F2EA6A118D78FE26002788A181 /* ACRAutoComplete-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56424EE247C62CD520F267BC2F80332E /* ACRAutoComplete-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FFEDE6F818271FD588C94660FD1C6F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56174776B966E76753CC31AC41F9B83;
+			remoteInfo = ACRAutoComplete;
+		};
+		B2449FA9ADF97621F0FA3C277452ADD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56174776B966E76753CC31AC41F9B83;
+			remoteInfo = ACRAutoComplete;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		055E1302B7E30C20DBF692E0B29050E4 /* Pods-ACRAutoComplete_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ACRAutoComplete_Example-resources.sh"; sourceTree = "<group>"; };
+		0626BD4B5EFFF85F13764FAD82FE5583 /* Pods-ACRAutoComplete_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ACRAutoComplete_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16830AFAEB68B3BAEC5AFF34BE5F2264 /* Pods-ACRAutoComplete_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ACRAutoComplete_Tests-resources.sh"; sourceTree = "<group>"; };
+		17D188CC4F9E5697004B5630AD98881D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1933891441916CD3660D5F2709578347 /* ACRAutoComplete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ACRAutoComplete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA64A28324BC744F21DF52CCC62FE36 /* Pods-ACRAutoComplete_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ACRAutoComplete_Tests-umbrella.h"; sourceTree = "<group>"; };
+		20793582994F7412AC34ECE6B6C732E8 /* Pods-ACRAutoComplete_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ACRAutoComplete_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2FF96E05DBFE6D8963A5AB42BB42A6EB /* Pods-ACRAutoComplete_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ACRAutoComplete_Example.modulemap"; sourceTree = "<group>"; };
+		3B1CD3CC241EDE7CA4842A421F26E861 /* AutoComplete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AutoComplete.swift; sourceTree = "<group>"; };
+		53B0F490EE50DEAF84189AD5FD3B4553 /* Pods-ACRAutoComplete_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ACRAutoComplete_Example-dummy.m"; sourceTree = "<group>"; };
+		547F4C5C7D5FF610031D98C5EF33A8C9 /* Pods-ACRAutoComplete_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ACRAutoComplete_Example-umbrella.h"; sourceTree = "<group>"; };
+		56424EE247C62CD520F267BC2F80332E /* ACRAutoComplete-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACRAutoComplete-dummy.m"; sourceTree = "<group>"; };
+		59586A20782D93C15E22410D0B8C1AA8 /* Pods_ACRAutoComplete_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRAutoComplete_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A11962C41574621B3770DF8DE5613D0 /* Pods-ACRAutoComplete_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ACRAutoComplete_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5D9031C17CDC0707904B6B494FA6C720 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652C0876D8456388D6359D8714C3A5FE /* Pods-ACRAutoComplete_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ACRAutoComplete_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		767579637BC148376DD53438A2408A8C /* Pods-ACRAutoComplete_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ACRAutoComplete_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8BC4163658DD33C76629ADCB536DA79D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90A5EBD397534DD7298E192302948008 /* Pods-ACRAutoComplete_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ACRAutoComplete_Example-frameworks.sh"; sourceTree = "<group>"; };
+		92BE98B4F694AF3664E1860A55ABC304 /* Pods-ACRAutoComplete_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ACRAutoComplete_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D551FAFFAC3C9C09EF7FF700A97E0FC /* Pods-ACRAutoComplete_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ACRAutoComplete_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A7B467BAFAE100941DDE3A22D20C8B14 /* Pods_ACRAutoComplete_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRAutoComplete_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9823DCC9E6748C1504C8F498C180A2B /* Pods-ACRAutoComplete_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ACRAutoComplete_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B301133D859D08161A0C0DFF1835E33E /* ACRAutoComplete.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ACRAutoComplete.modulemap; sourceTree = "<group>"; };
+		B661CC6AF49E054D6F14E66AB831204F /* ACRAutoComplete.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACRAutoComplete.xcconfig; sourceTree = "<group>"; };
+		BB89BDA3316C9FE5C74B9304B6262D39 /* ACRAutoComplete-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACRAutoComplete-prefix.pch"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E66FC8AF0DBF2D2CC3230674DE6372C7 /* Pods-ACRAutoComplete_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ACRAutoComplete_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E6907EC3892E16242F5E133ED3F24CDA /* ACRAutoComplete-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACRAutoComplete-umbrella.h"; sourceTree = "<group>"; };
+		FACBD49F3FB6DC26FCAFD15C98653989 /* Pods-ACRAutoComplete_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ACRAutoComplete_Tests-dummy.m"; sourceTree = "<group>"; };
+		FE4306B1827224D41F799FBC36E7BACF /* Pods-ACRAutoComplete_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ACRAutoComplete_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FB98FB0CE3185CE2EEA5FADFA4823B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1784B0A59D15939523E5B5C29824D6F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7EEA40C108AAA2F79781D7F347F2B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F92E2B60AFE010A8BBD3259BFE1E1C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93744E577D918A6796D9DDCD68552FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340242B7B18007DC18ABD0BBB3D70037 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5730321878982417F17D80D31EE3733A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E306D73010D3A9DDA56D71BAF5315315 /* ACRAutoComplete */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				5730321878982417F17D80D31EE3733A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F9A1DD728BC62D6FDE4DC788F8FB4F49 /* Products */,
+				A3426875904C290EE98170110CAFC8A5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		90026B62CE43861E21E43B7409CC5957 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B1CD3CC241EDE7CA4842A421F26E861 /* AutoComplete.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A3426875904C290EE98170110CAFC8A5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E564F1CC900947E7BED178AB84C93D2E /* Pods-ACRAutoComplete_Example */,
+				B75243E27AAAA26D1FB1E4F130900FE8 /* Pods-ACRAutoComplete_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B75243E27AAAA26D1FB1E4F130900FE8 /* Pods-ACRAutoComplete_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5D9031C17CDC0707904B6B494FA6C720 /* Info.plist */,
+				92BE98B4F694AF3664E1860A55ABC304 /* Pods-ACRAutoComplete_Tests.modulemap */,
+				0626BD4B5EFFF85F13764FAD82FE5583 /* Pods-ACRAutoComplete_Tests-acknowledgements.markdown */,
+				20793582994F7412AC34ECE6B6C732E8 /* Pods-ACRAutoComplete_Tests-acknowledgements.plist */,
+				FACBD49F3FB6DC26FCAFD15C98653989 /* Pods-ACRAutoComplete_Tests-dummy.m */,
+				5A11962C41574621B3770DF8DE5613D0 /* Pods-ACRAutoComplete_Tests-frameworks.sh */,
+				16830AFAEB68B3BAEC5AFF34BE5F2264 /* Pods-ACRAutoComplete_Tests-resources.sh */,
+				1FA64A28324BC744F21DF52CCC62FE36 /* Pods-ACRAutoComplete_Tests-umbrella.h */,
+				A9823DCC9E6748C1504C8F498C180A2B /* Pods-ACRAutoComplete_Tests.debug.xcconfig */,
+				E66FC8AF0DBF2D2CC3230674DE6372C7 /* Pods-ACRAutoComplete_Tests.release.xcconfig */,
+			);
+			name = "Pods-ACRAutoComplete_Tests";
+			path = "Target Support Files/Pods-ACRAutoComplete_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C32798B414FBCB6CBAD5E9075C3B1DC4 /* ACRAutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				90026B62CE43861E21E43B7409CC5957 /* Classes */,
+			);
+			path = ACRAutoComplete;
+			sourceTree = "<group>";
+		};
+		D53C7D734DB8CFF4D8EEBE8C13DF1146 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B301133D859D08161A0C0DFF1835E33E /* ACRAutoComplete.modulemap */,
+				B661CC6AF49E054D6F14E66AB831204F /* ACRAutoComplete.xcconfig */,
+				56424EE247C62CD520F267BC2F80332E /* ACRAutoComplete-dummy.m */,
+				BB89BDA3316C9FE5C74B9304B6262D39 /* ACRAutoComplete-prefix.pch */,
+				E6907EC3892E16242F5E133ED3F24CDA /* ACRAutoComplete-umbrella.h */,
+				8BC4163658DD33C76629ADCB536DA79D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ACRAutoComplete";
+			sourceTree = "<group>";
+		};
+		E306D73010D3A9DDA56D71BAF5315315 /* ACRAutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				C32798B414FBCB6CBAD5E9075C3B1DC4 /* ACRAutoComplete */,
+				D53C7D734DB8CFF4D8EEBE8C13DF1146 /* Support Files */,
+			);
+			name = ACRAutoComplete;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E564F1CC900947E7BED178AB84C93D2E /* Pods-ACRAutoComplete_Example */ = {
+			isa = PBXGroup;
+			children = (
+				17D188CC4F9E5697004B5630AD98881D /* Info.plist */,
+				2FF96E05DBFE6D8963A5AB42BB42A6EB /* Pods-ACRAutoComplete_Example.modulemap */,
+				9D551FAFFAC3C9C09EF7FF700A97E0FC /* Pods-ACRAutoComplete_Example-acknowledgements.markdown */,
+				652C0876D8456388D6359D8714C3A5FE /* Pods-ACRAutoComplete_Example-acknowledgements.plist */,
+				53B0F490EE50DEAF84189AD5FD3B4553 /* Pods-ACRAutoComplete_Example-dummy.m */,
+				90A5EBD397534DD7298E192302948008 /* Pods-ACRAutoComplete_Example-frameworks.sh */,
+				055E1302B7E30C20DBF692E0B29050E4 /* Pods-ACRAutoComplete_Example-resources.sh */,
+				547F4C5C7D5FF610031D98C5EF33A8C9 /* Pods-ACRAutoComplete_Example-umbrella.h */,
+				FE4306B1827224D41F799FBC36E7BACF /* Pods-ACRAutoComplete_Example.debug.xcconfig */,
+				767579637BC148376DD53438A2408A8C /* Pods-ACRAutoComplete_Example.release.xcconfig */,
+			);
+			name = "Pods-ACRAutoComplete_Example";
+			path = "Target Support Files/Pods-ACRAutoComplete_Example";
+			sourceTree = "<group>";
+		};
+		F9A1DD728BC62D6FDE4DC788F8FB4F49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1933891441916CD3660D5F2709578347 /* ACRAutoComplete.framework */,
+				59586A20782D93C15E22410D0B8C1AA8 /* Pods_ACRAutoComplete_Example.framework */,
+				A7B467BAFAE100941DDE3A22D20C8B14 /* Pods_ACRAutoComplete_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A326FF55A57A8298F628430352B76097 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE216C1BA9D9406C0635698AC30F02C /* Pods-ACRAutoComplete_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D3A28159A48916A90B790D27C9BBF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDF6FE2556CC647EB6069D73F2C3FF8 /* ACRAutoComplete-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F07E2AA9CD8A886B4CA7A2F2CE3025 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8F38B6F4DFE742342DCA102E6D3E1C /* Pods-ACRAutoComplete_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0880C5F15136308FE863E52B50F431C4 /* Pods-ACRAutoComplete_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD727D880D97CBBB4BEBD6A0A7C816C4 /* Build configuration list for PBXNativeTarget "Pods-ACRAutoComplete_Tests" */;
+			buildPhases = (
+				7C171B4552E9108419A6E721A673221D /* Sources */,
+				0FB98FB0CE3185CE2EEA5FADFA4823B5 /* Frameworks */,
+				A326FF55A57A8298F628430352B76097 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5C389F1DFCAAF2F6BEF504053F2EBBB /* PBXTargetDependency */,
+			);
+			name = "Pods-ACRAutoComplete_Tests";
+			productName = "Pods-ACRAutoComplete_Tests";
+			productReference = A7B467BAFAE100941DDE3A22D20C8B14 /* Pods_ACRAutoComplete_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDD573ABFD96F61D0384EBBCB6E1A5E0 /* Pods-ACRAutoComplete_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BD5CEE63F7167998A7E59103D12C8B3 /* Build configuration list for PBXNativeTarget "Pods-ACRAutoComplete_Example" */;
+			buildPhases = (
+				595B6C5E52981B11F19638467C2514F2 /* Sources */,
+				1C7EEA40C108AAA2F79781D7F347F2B4 /* Frameworks */,
+				C0F07E2AA9CD8A886B4CA7A2F2CE3025 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B78F3F5237B800D78EC4DB36771986F /* PBXTargetDependency */,
+			);
+			name = "Pods-ACRAutoComplete_Example";
+			productName = "Pods-ACRAutoComplete_Example";
+			productReference = 59586A20782D93C15E22410D0B8C1AA8 /* Pods_ACRAutoComplete_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F56174776B966E76753CC31AC41F9B83 /* ACRAutoComplete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14100D3A1CE70E9CF8360BF0E2C31691 /* Build configuration list for PBXNativeTarget "ACRAutoComplete" */;
+			buildPhases = (
+				16E3916236DCDFBBE4D8227F009BCBD9 /* Sources */,
+				93744E577D918A6796D9DDCD68552FA7 /* Frameworks */,
+				B2D3A28159A48916A90B790D27C9BBF5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ACRAutoComplete;
+			productName = ACRAutoComplete;
+			productReference = 1933891441916CD3660D5F2709578347 /* ACRAutoComplete.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F9A1DD728BC62D6FDE4DC788F8FB4F49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F56174776B966E76753CC31AC41F9B83 /* ACRAutoComplete */,
+				EDD573ABFD96F61D0384EBBCB6E1A5E0 /* Pods-ACRAutoComplete_Example */,
+				0880C5F15136308FE863E52B50F431C4 /* Pods-ACRAutoComplete_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16E3916236DCDFBBE4D8227F009BCBD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C1B7D51DCBDADF00CA930B /* AutoComplete.swift in Sources */,
+				EA4866F2EA6A118D78FE26002788A181 /* ACRAutoComplete-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595B6C5E52981B11F19638467C2514F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8217F70335D5FA58A9F8048906264B44 /* Pods-ACRAutoComplete_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C171B4552E9108419A6E721A673221D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD141744BA7953C46551E19DFCC4001A /* Pods-ACRAutoComplete_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B78F3F5237B800D78EC4DB36771986F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACRAutoComplete;
+			target = F56174776B966E76753CC31AC41F9B83 /* ACRAutoComplete */;
+			targetProxy = B2449FA9ADF97621F0FA3C277452ADD6 /* PBXContainerItemProxy */;
+		};
+		D5C389F1DFCAAF2F6BEF504053F2EBBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACRAutoComplete;
+			target = F56174776B966E76753CC31AC41F9B83 /* ACRAutoComplete */;
+			targetProxy = 0FFEDE6F818271FD588C94660FD1C6F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02B333C08BA6F7F03719B2652E8F6D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B661CC6AF49E054D6F14E66AB831204F /* ACRAutoComplete.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ACRAutoComplete/ACRAutoComplete-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACRAutoComplete/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ACRAutoComplete/ACRAutoComplete.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ACRAutoComplete;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		192B96366B25800BBB3A6CA857FD462D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66FC8AF0DBF2D2CC3230674DE6372C7 /* Pods-ACRAutoComplete_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ACRAutoComplete_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ACRAutoComplete_Tests/Pods-ACRAutoComplete_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ACRAutoComplete_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		409BD51BB97D34FA3B083760DA735D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4306B1827224D41F799FBC36E7BACF /* Pods-ACRAutoComplete_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ACRAutoComplete_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ACRAutoComplete_Example/Pods-ACRAutoComplete_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ACRAutoComplete_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8BB5FE6304F94F9405C6B59D90A87845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B661CC6AF49E054D6F14E66AB831204F /* ACRAutoComplete.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ACRAutoComplete/ACRAutoComplete-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACRAutoComplete/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ACRAutoComplete/ACRAutoComplete.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ACRAutoComplete;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A7C00F9FF8A78E9D84D16AE03718217B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9823DCC9E6748C1504C8F498C180A2B /* Pods-ACRAutoComplete_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ACRAutoComplete_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ACRAutoComplete_Tests/Pods-ACRAutoComplete_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ACRAutoComplete_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E40563D2058751F8372EABBD09D670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767579637BC148376DD53438A2408A8C /* Pods-ACRAutoComplete_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ACRAutoComplete_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ACRAutoComplete_Example/Pods-ACRAutoComplete_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ACRAutoComplete_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14100D3A1CE70E9CF8360BF0E2C31691 /* Build configuration list for PBXNativeTarget "ACRAutoComplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B333C08BA6F7F03719B2652E8F6D5A /* Debug */,
+				8BB5FE6304F94F9405C6B59D90A87845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BD5CEE63F7167998A7E59103D12C8B3 /* Build configuration list for PBXNativeTarget "Pods-ACRAutoComplete_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409BD51BB97D34FA3B083760DA735D6A /* Debug */,
+				D3E40563D2058751F8372EABBD09D670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD727D880D97CBBB4BEBD6A0A7C816C4 /* Build configuration list for PBXNativeTarget "Pods-ACRAutoComplete_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C00F9FF8A78E9D84D16AE03718217B /* Debug */,
+				192B96366B25800BBB3A6CA857FD462D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

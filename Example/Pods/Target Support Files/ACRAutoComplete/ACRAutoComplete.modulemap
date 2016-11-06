@@ -1,0 +1,6 @@
+framework module ACRAutoComplete {
+  umbrella header "ACRAutoComplete-umbrella.h"
+
+  export *
+  module * { export * }
+}

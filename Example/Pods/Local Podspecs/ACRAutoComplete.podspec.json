@@ -1,0 +1,22 @@
+{
+  "name": "ACRAutoComplete",
+  "version": "0.1.0",
+  "summary": "A short description of ACRAutoComplete.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ACRAutoComplete",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Andrew Crookston": "andrew@caoos.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ACRAutoComplete.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ACRAutoComplete/Classes/**/*"
+}

@@ -13,6 +13,13 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A1336EBC1D9133B50017DE22 /* TrieTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1336EBB1D9133B50017DE22 /* TrieTest.swift */; };
+		A1336EC01D9133E10017DE22 /* SearchExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1336EBF1D9133E10017DE22 /* SearchExample.swift */; };
+		A169BEE41DCE98FB00DA1EC3 /* sowpods.txt in Resources */ = {isa = PBXBuildFile; fileRef = A169BEE31DCE98FB00DA1EC3 /* sowpods.txt */; };
+		A169BEE51DCE98FB00DA1EC3 /* sowpods.txt in Resources */ = {isa = PBXBuildFile; fileRef = A169BEE31DCE98FB00DA1EC3 /* sowpods.txt */; };
+		A169BEE61DCE998000DA1EC3 /* SearchExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1336EBF1D9133E10017DE22 /* SearchExample.swift */; };
+		A169BEE81DCE9C5800DA1EC3 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A169BEE71DCE9C5800DA1EC3 /* LabelCell.swift */; };
+		A169BEEA1DCEA53000DA1EC3 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A169BEE91DCEA53000DA1EC3 /* Word.swift */; };
 		BF3108B0AA81A8B02B419DD8 /* Pods_ACRAutoComplete_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CFDE2AF35ADD59F27EB2FE /* Pods_ACRAutoComplete_Example.framework */; };
 		CF8EBB5AE8D172F7C0832938 /* Pods_ACRAutoComplete_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F639E4FF19657D4801B28 /* Pods_ACRAutoComplete_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +49,11 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7CD2C8B437664F30EA53C9FF /* Pods-ACRAutoComplete_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRAutoComplete_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRAutoComplete_Example/Pods-ACRAutoComplete_Example.release.xcconfig"; sourceTree = "<group>"; };
 		834046B8923CE89D921E8393 /* ACRAutoComplete.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACRAutoComplete.podspec; path = ../ACRAutoComplete.podspec; sourceTree = "<group>"; };
+		A1336EBB1D9133B50017DE22 /* TrieTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieTest.swift; sourceTree = "<group>"; };
+		A1336EBF1D9133E10017DE22 /* SearchExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchExample.swift; sourceTree = "<group>"; };
+		A169BEE31DCE98FB00DA1EC3 /* sowpods.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sowpods.txt; sourceTree = "<group>"; };
+		A169BEE71DCE9C5800DA1EC3 /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		A169BEE91DCEA53000DA1EC3 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		A22B04C59B42B9B2EF6EBCED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C1CFDE2AF35ADD59F27EB2FE /* Pods_ACRAutoComplete_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRAutoComplete_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B022E23BECC47DF0750A59 /* Pods-ACRAutoComplete_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRAutoComplete_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRAutoComplete_Example/Pods-ACRAutoComplete_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +116,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				A169BEE71DCE9C5800DA1EC3 /* LabelCell.swift */,
+				A169BEE91DCEA53000DA1EC3 /* Word.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -124,6 +138,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A1336EBF1D9133E10017DE22 /* SearchExample.swift */,
+				A1336EBB1D9133B50017DE22 /* TrieTest.swift */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -133,6 +149,7 @@
 		607FACE91AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A169BEE31DCE98FB00DA1EC3 /* sowpods.txt */,
 				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -210,14 +227,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -246,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A169BEE41DCE98FB00DA1EC3 /* sowpods.txt in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -256,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A169BEE51DCE98FB00DA1EC3 /* sowpods.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +381,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				A169BEE61DCE998000DA1EC3 /* SearchExample.swift in Sources */,
+				A169BEEA1DCEA53000DA1EC3 /* Word.swift in Sources */,
+				A169BEE81DCE9C5800DA1EC3 /* LabelCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +393,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				A1336EC01D9133E10017DE22 /* SearchExample.swift in Sources */,
+				A1336EBC1D9133B50017DE22 /* TrieTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +441,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -460,8 +488,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -480,6 +510,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -488,12 +519,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2B022E23BECC47DF0750A59 /* Pods-ACRAutoComplete_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ACRAutoComplete/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -501,12 +534,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CD2C8B437664F30EA53C9FF /* Pods-ACRAutoComplete_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ACRAutoComplete/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -514,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F9CB8B2086E9C0B9D06E5F7F /* Pods-ACRAutoComplete_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -526,6 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -533,6 +570,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 421C56AC963E64385E8966B0 /* Pods-ACRAutoComplete_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,6 +579,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
