@@ -35,6 +35,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         loadWords()
         tableView.tableHeaderView = searchBar
+
+//        autoComplete.insert(Word(word: "abc"))
     }
 
     override func didReceiveMemoryWarning() {

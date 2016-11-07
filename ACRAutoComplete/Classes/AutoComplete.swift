@@ -20,10 +20,41 @@ open class AutoComplete<T : Searchable> {
 
     public func insert(_ object: T) {
         for string in object.keywords() {
-            var tokens = tokenize(string)
+//            print("INSERT \(string)")
+            var tokens =  tokenize(string) // string.characters.reversed()
             var at = 0
             var max = tokens.count
             insert(&tokens, at: &at, max: &max, object: object)
+        }
+    }
+
+    //    String.CharacterView
+    private func insert(_ tokens: inout [Character], at: inout Int, max: inout Int, object: T) {
+//        [c, b, a]
+//        [c, b]
+//        [c]
+//        []
+
+        if at < max {
+
+            let current = tokens[at]
+            at += 1
+
+            if nodes == nil {
+                nodes = [Character : AutoComplete<T>]()
+            }
+
+            if nodes![current] == nil {
+                nodes![current] = AutoComplete<T>()
+            }
+
+            nodes![current]!.insert(&tokens, at: &at, max: &max, object: object)
+
+        } else {
+            if items == nil {
+                items = [T]()
+            }
+            items!.append(object)
         }
     }
 
@@ -79,26 +110,6 @@ open class AutoComplete<T : Searchable> {
         let current = tokens.remove(at: 0)
 
         nodes[current]?.find(&tokens, into: &results)
-    }
-
-    private func insert(_ tokens: inout [Character], at: inout Int, max: inout Int, object: T) {
-        if at < max {
-            let next = tokens[at]
-            at += 1
-
-            if nodes == nil {
-                nodes = [Character : AutoComplete<T>]()
-            }
-            if nodes![next] == nil {
-                nodes![next] = AutoComplete<T>()
-            }
-            nodes![next]!.insert(&tokens, at: &at, max: &max, object: object)
-        } else {
-            if items == nil {
-                items = [T]()
-            }
-            items!.append(object)
-        }
     }
 
     private func tokenize(_ string: String) -> [Character] {
