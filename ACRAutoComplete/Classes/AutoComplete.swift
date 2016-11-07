@@ -21,15 +21,16 @@ open class AutoComplete<T : Searchable> {
     public func insert(_ object: T) {
         for string in object.keywords() {
 //            print("INSERT \(string)")
-            var tokens =  tokenize(string) // string.characters.reversed()
-            var at = 0
-            var max = tokens.count
+//            var tokens =  tokenize(string) // string.characters.reversed()
+            var tokens = string.characters
+            var at = tokens.startIndex
+            var max = tokens.endIndex
             insert(&tokens, at: &at, max: &max, object: object)
         }
     }
 
     //    String.CharacterView
-    private func insert(_ tokens: inout [Character], at: inout Int, max: inout Int, object: T) {
+    private func insert(_ tokens: inout String.CharacterView, at: inout String.Index, max: inout String.Index, object: T) {
 //        [c, b, a]
 //        [c, b]
 //        [c]
@@ -38,7 +39,6 @@ open class AutoComplete<T : Searchable> {
         if at < max {
 
             let current = tokens[at]
-            at += 1
 
             if nodes == nil {
                 nodes = [Character : AutoComplete<T>]()
@@ -48,6 +48,7 @@ open class AutoComplete<T : Searchable> {
                 nodes![current] = AutoComplete<T>()
             }
 
+            at = tokens.index(at, offsetBy: 1)
             nodes![current]!.insert(&tokens, at: &at, max: &max, object: object)
 
         } else {
