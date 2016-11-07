@@ -20,10 +20,7 @@ open class AutoComplete<T : Searchable> {
 
     public func insert(_ object: T) {
         for string in object.keywords() {
-            var tokens = tokenize(string)
-            var at = 0
-            var max = tokens.count
-            insert(&tokens, at: &at, max: &max, object: object)
+            insert(string, at: string.startIndex, max: string.endIndex, object: object)
         }
     }
 
@@ -81,18 +78,19 @@ open class AutoComplete<T : Searchable> {
         nodes[current]?.find(&tokens, into: &results)
     }
 
-    private func insert(_ tokens: inout [Character], at: inout Int, max: inout Int, object: T) {
+    private func insert(_ string: String, at: String.Index, max: String.Index, object: T) {
         if at < max {
-            let next = tokens[at]
-            at += 1
+            let current = string[at]
 
             if nodes == nil {
                 nodes = [Character : AutoComplete<T>]()
             }
-            if nodes![next] == nil {
-                nodes![next] = AutoComplete<T>()
+
+            if nodes![current] == nil {
+                nodes![current] = AutoComplete<T>()
             }
-            nodes![next]!.insert(&tokens, at: &at, max: &max, object: object)
+
+            nodes![current]!.insert(string, at: string.index(at, offsetBy: 1), max: max, object: object)
         } else {
             if items == nil {
                 items = [T]()
