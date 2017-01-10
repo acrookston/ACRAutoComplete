@@ -20,20 +20,14 @@ open class AutoComplete<T : Searchable> {
 
     public func insert(_ object: T) {
         for string in object.keywords() {
-//            print("INSERT \(string)")
-            var tokens =  tokenize(string) // string.characters.reversed()
+            var tokens =  tokenize(string)
             var at = 0
             var max = tokens.count
             insert(&tokens, at: &at, max: &max, object: object)
         }
     }
 
-    //    String.CharacterView
     private func insert(_ tokens: inout [Character], at: inout Int, max: inout Int, object: T) {
-//        [c, b, a]
-//        [c, b]
-//        [c]
-//        []
 
         if at < max {
 
@@ -115,25 +109,4 @@ open class AutoComplete<T : Searchable> {
     private func tokenize(_ string: String) -> [Character] {
         return Array(string.lowercased().characters)
     }
-
-//    // MARK: - NSCoding
-//
-//    let codingKeyNodes = "nodes"
-//    let codingKeyItems = "items"
-//
-//    public func encode(with aCoder: NSCoder) {
-//        aCoder.encode(self.children, forKey: codingKeyChildren)
-//        aCoder.encode(self.children, forKey: codingKeyItems)
-//    }
-//
-//    required convenience public init?(coder decoder: NSCoder) {
-//        self.init()
-//        children = decoder.decodeObject(forKey: codingKeyChildren) as? [Character : AutoComplete<T>]
-//        items = decoder.decodeObject(forKey: codingKeyItems) as? [T]
-//    }
-//
-//    func encodeWithCoder(coder: NSCoder) {
-//        coder.encode(self.children, forKey: codingKeyChildren)
-//        coder.encode(self.children, forKey: codingKeyItems)
-//    }
 }
