@@ -1,42 +1,23 @@
-#
-# Be sure to run `pod lib lint ACRAutoComplete.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'ACRAutoComplete'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ACRAutoComplete.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.summary          = 'An auto-complete library written in Swift for iOS using the trie data structure'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  An auto-complete library written in Swift for iOS using the trie data structure.
+
+  A simple Trie structure implementation in Swift for indexing and searching words.
+
+  This library does not include a user interface, it was built to be a simple easy to use auto-completion tool. Originally, it written for MessMoji.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/ACRAutoComplete'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/acrookston/ACRAutoComplete'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Andrew Crookston' => 'andrew@caoos.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/ACRAutoComplete.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/acrookston/ACRAutoComplete.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/acr'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ACRAutoComplete/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ACRAutoComplete' => ['ACRAutoComplete/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
