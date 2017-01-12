@@ -64,6 +64,7 @@ class Word : Searchable {
         return lhs.id == rhs.id
     }
 }
+```
 
 In your controller or place where you wish to use the index. Create an `AutoComplete` object with the `Word` class:
 ```swift
