@@ -14,5 +14,7 @@ before_install:
 - pod install --project-directory=Example
 
 script:
-- set -o pipefail && xcodebuild clean build -workspace Example/ACRAutoComplete.xcworkspace -scheme ACRAutoComplete-Example -destination "platform=iOS Simulator,name=iPhone 7" ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild clean build test -workspace Example/ACRAutoComplete.xcworkspace -scheme ACRAutoComplete-Example -destination "platform=iOS Simulator,name=iPhone 7" ONLY_ACTIVE_ARCH=NO
 - pod lib lint
+after_success:
+- bash <(curl -s https://codecov.io/bash)

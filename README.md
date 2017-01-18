@@ -7,6 +7,7 @@
 [![License](https://img.shields.io/cocoapods/l/ACRAutoComplete.svg?style=flat)](http://cocoapods.org/pods/ACRAutoComplete)
 [![Platform](https://img.shields.io/cocoapods/p/ACRAutoComplete.svg?style=flat)](http://cocoapods.org/pods/ACRAutoComplete)
 [![codebeat badge](https://codebeat.co/badges/0f4314a5-4d04-4c30-b741-561782b595e9)](https://codebeat.co/projects/github-com-acrookston-acrautocomplete)
+[![codecov](https://codecov.io/gh/acrookston/ACRAutoComplete/branch/master/graph/badge.svg)](https://codecov.io/gh/acrookston/ACRAutoComplete)
 
 A simple Trie structure implementation in Swift for indexing and searching words.
 
