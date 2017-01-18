@@ -1,6 +1,6 @@
 # ACRAutoComplete
 
-### An auto-complete text library for iOS.
+### A text search and auto-completion library written in Swift for iOS.
 
 [![CI Status](http://img.shields.io/travis/acrookston/ACRAutoComplete.svg?style=flat)](https://travis-ci.org/acrookston/ACRAutoComplete)
 [![Version](https://img.shields.io/cocoapods/v/ACRAutoComplete.svg?style=flat)](http://cocoapods.org/pods/ACRAutoComplete)
@@ -9,28 +9,41 @@
 [![codebeat badge](https://codebeat.co/badges/0f4314a5-4d04-4c30-b741-561782b595e9)](https://codebeat.co/projects/github-com-acrookston-acrautocomplete)
 [![codecov](https://codecov.io/gh/acrookston/ACRAutoComplete/branch/master/graph/badge.svg)](https://codecov.io/gh/acrookston/ACRAutoComplete)
 
-A simple Trie structure implementation in Swift for indexing and searching words.
 
-This library does not include a user interface, it was built to be a simple easy to use auto-completion tool. Originally, it written for [MessMoji](http://messmoji.com).
+Index and quickly search Swift objects for specific words. Based on a [Trie](https://en.wikipedia.org/wiki/Trie) data structure.
+
+The library does not include a user interface, however there is a full working UI in the Example code. Originally this was written for [MessMoji](http://messmoji.com).
+
+
+## Metrics
+
+A SOWPODS word list is used for testing and contains 267753 words.
+
+On the the iOS Simulator, index time is roughly 5 seconds and searching usually takes 200ms or less.
 
 
 ## Author
 
 Andrew Crookston
 
-Please send me a tweet if you like this library or have questions or feedback: [@acr](https://twitter.com/acr)
+Tweet me if you like this library, have questions or feedback: [@acr](https://twitter.com/acr)
+
+
+## Contributing
+
+Any contributions should be submitted as pull-requests. Please make sure the tests are passing before submitting.
 
 
 ## Example
 
-The Example project contains a full working implementation of the library including a table view, and an input field to search the SOWPODS word list. If you are looking for an auto-complete solution with a UI, take a look at the Example project.
+The Example project contains a fully working implementation with a simple user interface to search the SOWPODS word list.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory before running.
 
 
 ## Requirements
 
-The library was written for iOS. It has no external requirements and it's possible it works on macOS or other Swift platforms, but this has not been tested.
+The library was written for iOS and has no external requirements. It's possible it will work on macOS or other Swift platforms, but has not been tested.
 
 
 ## Installation
@@ -40,6 +53,7 @@ ACRAutoComplete is available through [CocoaPods](https://cocoapods.org). To inst
 ```ruby
 pod "ACRAutoComplete"
 ```
+
 
 ## Usage
 
@@ -84,9 +98,6 @@ Finally, when needed, search the index for any matching objects:
 autocomplete.search("foot") // -> [Word("Football")]
 ```
 
-## Metrics
-
-For testing, the SOWPODS word list has been used. It contains 267753 words which takes roughly 5 seconds to index in the iOS Simulator. Searching is very quick and will take less than 200ms, depeding .
 
 ## License
 
