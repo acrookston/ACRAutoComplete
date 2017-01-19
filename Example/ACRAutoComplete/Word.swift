@@ -8,9 +8,9 @@
 import Foundation
 import ACRAutoComplete
 
-class Word : Searchable {
+class Word: Searchable {
 
-    var word : String
+    var word: String
 
     init(word: String) {
         self.word = word

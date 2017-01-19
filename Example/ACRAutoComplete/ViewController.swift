@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var results = [Word]()
     var searching = false
 
-    private lazy var searchBar : UISearchBar = {
+    private lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 44))
         searchBar.searchBarStyle = .minimal
         searchBar.barTintColor = .white
@@ -27,7 +27,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         searchBar.showsCancelButton = true
         return searchBar
     }()
-
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -131,7 +130,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // MARK: - UITableViewDelegate
 
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if searching {
             UIPasteboard.general.string = results[indexPath.row].word
@@ -142,8 +140,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 }
 
-
-func printTimeElapsedWhenRunningCode(title:String, operation:()->()) {
+func printTimeElapsedWhenRunningCode(title: String, operation:()->Void) {
     let startTime = CFAbsoluteTimeGetCurrent()
     operation()
     let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime

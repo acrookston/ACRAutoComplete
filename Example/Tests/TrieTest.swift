@@ -11,7 +11,7 @@ import ACRAutoComplete
 
 class AutoCompleteTest: XCTestCase {
 
-    var trie : AutoComplete<SearchExample>!
+    var trie: AutoComplete<SearchExample>!
 
     override func setUp() {
         super.setUp()
@@ -58,7 +58,6 @@ class AutoCompleteTest: XCTestCase {
         XCTAssert(trie.search("ha").count == 1, "Contains happy as partial search ha for happy")
         XCTAssert(trie.search("si").count == 1, "Contains happy as partial search si for silly")
     }
-
 
     func testSearchShouldNotFindShorterWords() {
         // This tests to make sure "Football" does not match against "foot"

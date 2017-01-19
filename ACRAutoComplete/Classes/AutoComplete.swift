@@ -7,14 +7,14 @@
 
 import Foundation
 
-public protocol Searchable : Hashable {
+public protocol Searchable: Hashable {
     func keywords() -> [String]
 }
 
 open class AutoComplete<T : Searchable> {
 
-    var nodes : [Character : AutoComplete<T>]?
-    var items  : [T]?
+    var nodes: [Character : AutoComplete<T>]?
+    var items: [T]?
 
     public init() { }
 
@@ -35,7 +35,7 @@ open class AutoComplete<T : Searchable> {
             at += 1
 
             if nodes == nil {
-                nodes = [Character : AutoComplete<T>]()
+                nodes = [Character: AutoComplete<T>]()
             }
 
             if nodes![current] == nil {
@@ -59,7 +59,7 @@ open class AutoComplete<T : Searchable> {
     }
 
     public func search(_ string: String) -> [T] {
-        var mergedResults : Set<T>?
+        var mergedResults: Set<T>?
 
         for word in string.components(separatedBy: " ") {
             var wordResults = Set<T>()

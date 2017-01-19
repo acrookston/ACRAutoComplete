@@ -8,10 +8,10 @@
 import Foundation
 import ACRAutoComplete
 
-class SearchExample : Searchable {
+class SearchExample: Searchable {
 
-    var id : String
-    var words : [String]
+    var id: String
+    var words: [String]
 
     init(id: String, words: [String]) {
         self.id = id
@@ -22,7 +22,7 @@ class SearchExample : Searchable {
         return words
     }
 
-    //MARK: - Hashable
+    // MARK: - Hashable
 
     var hashValue: Int { return id.hashValue }
 
