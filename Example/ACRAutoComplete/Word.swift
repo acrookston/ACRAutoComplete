@@ -8,7 +8,7 @@
 import Foundation
 import ACRAutoComplete
 
-class Word: Searchable {
+final class Word: Searchable {
 
     var word: String
 

@@ -9,7 +9,7 @@
 import UIKit
 import ACRAutoComplete
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+final class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
     var words = [Word]()
     var autoComplete = AutoComplete<Word>()
