@@ -19,14 +19,14 @@ The library does not include a user interface, however there is a full working U
 
 A SOWPODS word list is used for testing and contains 267753 words.
 
-On the the iOS Simulator, index time is roughly 5 seconds and searching usually takes 200ms or less.
+Via iOS Simulator on a Macbook Pro 13" 2.4 GHz Intel Core i5 8GB, index time is roughly 5 seconds and searching usually takes 200ms or less.
 
 
 ## Author
 
-Andrew Crookston
+Andrew Crookston [@acr](https://twitter.com/acr)
 
-Tweet me if you like this library, have questions or feedback: [@acr](https://twitter.com/acr)
+Tweet me if you like this library, have questions or feedback.
 
 
 ## Contributing
@@ -45,6 +45,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 The library was written for iOS and has no external requirements. It's possible it will work on macOS or other Swift platforms, but has not been tested.
 
+Built for:
+
+- Swift 3 or 4
+- iOS 8+
 
 ## Installation
 
@@ -53,6 +57,13 @@ ACRAutoComplete is available through [CocoaPods](https://cocoapods.org). To inst
 ```ruby
 pod "ACRAutoComplete"
 ```
+
+Swift 3 legacy support through the `swift-3` branch:
+```
+pod "ACRAutoComplete", branch: "swift-3"
+```
+
+Support for Carthage and SPM is on the way (and a good place to add your contribution).
 
 
 ## Usage
