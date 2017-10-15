@@ -59,8 +59,8 @@ pod "ACRAutoComplete"
 ```
 
 Swift 3 legacy support through the `swift-3` branch:
-```
-pod "ACRAutoComplete", branch: "swift-3"
+```ruby
+pod "ACRAutoComplete", git: "https://github.com/acrookston/ACRAutoComplete", branch: "swift-3"
 ```
 
 Support for Carthage and SPM is on the way (and a good place to add your contribution).
@@ -73,14 +73,14 @@ First add the protocol to whatever object you wish to index, for example with a 
 ```swift
 import ACRAutoComplete
 
-class Word : Searchable {
-    let word : String
+class Word: Searchable {
+    let word: String
     init(_ word: String) {
         self.word = word
     }
 
     // From Searchable protocol
-    func keywords() -> [String] {
+    var keywords: [String] {
         return [word]
     }
 
@@ -114,4 +114,4 @@ autocomplete.search("foot") // -> [Word("Football")]
 
 ACRAutoComplete is available under the MIT license. See the LICENSE file for more info.
 
-The example project (not the Pod) includes a SOWPODS word file which is used for testing. The license of the SOWPODS file when downloaded was unknown but was labeled "open source".
+The example project (not the framework) includes a SOWPODS word file which is used for testing. The license of the SOWPODS file when downloaded was unknown but was labeled "open source".
