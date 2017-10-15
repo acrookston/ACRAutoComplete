@@ -8,18 +8,19 @@
 import Foundation
 
 public protocol Searchable: Hashable {
-    func keywords() -> [String]
+    var keywords: [String] { get }
 }
 
 open class AutoComplete<T : Searchable> {
-
-    var nodes: [Character : AutoComplete<T>]?
-    var items: [T]?
+    lazy var nodes = [Character : AutoComplete<T>]()
+    lazy var items = [T]()
 
     public init() { }
 
+    // MARK: - Insert / index
+
     public func insert(_ object: T) {
-        for string in object.keywords() {
+        for string in object.keywords {
             var tokens = tokenize(string)
             var at = 0
             var max = tokens.count
@@ -32,72 +33,64 @@ open class AutoComplete<T : Searchable> {
             let current = tokens[at]
             at += 1
 
-            if nodes == nil {
-                nodes = [Character: AutoComplete<T>]()
+            if nodes[current] == nil {
+                nodes[current] = AutoComplete<T>()
             }
 
-            if nodes![current] == nil {
-                nodes![current] = AutoComplete<T>()
-            }
-
-            nodes![current]!.insert(&tokens, at: &at, max: &max, object: object)
+            nodes[current]?.insert(&tokens, at: &at, max: &max, object: object)
         } else {
-            if items == nil {
-                items = [T]()
-            }
-            items!.append(object)
+            items.append(object)
         }
     }
 
-    public func insert(set: [T]) {
+    public func insert(_ set: [T]) {
         for object in set {
             insert(object)
         }
     }
 
+    // MARK: - Search
+
     public func search(_ string: String) -> [T] {
-        var mergedResults: Set<T>?
+        var merged: Set<T>?
 
         for word in string.components(separatedBy: " ") {
             var wordResults = Set<T>()
             var tokens = tokenize(word)
+            var count = tokens.count
             var at = 0
-            find(&tokens, at: &at, into: &wordResults)
-            if mergedResults == nil {
-                mergedResults = wordResults
+            find(&tokens, at: &at, max: &count, into: &wordResults)
+            if let results = merged {
+                merged = results.intersection(wordResults)
             } else {
-                mergedResults = mergedResults!.intersection(wordResults)
+                merged = wordResults
             }
         }
 
-        return mergedResults == nil ? [] : Array(mergedResults!)
+        if let results = merged {
+            return Array(results)
+        }
+        return []
+    }
+
+    private func find(_ tokens: inout [Character], at: inout Int, max: inout Int, into results: inout Set<T>) {
+        if at < max {
+            let current = tokens[at]
+            at += 1
+            nodes[current]?.find(&tokens, at: &at, max: &max, into: &results)
+        } else {
+            insertAll(into: &results)
+        }
     }
 
     func insertAll(into results: inout Set<T>) {
-        if let items = items {
-            for t in items {
-                results.insert(t)
-            }
+        for t in items {
+            results.insert(t)
         }
-
-        guard let nodes = nodes else { return }
 
         for (_, child) in nodes {
             child.insertAll(into: &results)
         }
-    }
-
-    private func find(_ tokens: inout [Character], at: inout Int, into results: inout Set<T>) {
-        guard tokens.count > 0 else {
-            insertAll(into: &results)
-            return
-        }
-        guard let nodes = nodes else { return }
-
-        let current = tokens[at]
-        at += 1
-
-        nodes[current]?.find(&tokens, at: &at, into: &results)
     }
 
     private func tokenize(_ string: String) -> [Character] {

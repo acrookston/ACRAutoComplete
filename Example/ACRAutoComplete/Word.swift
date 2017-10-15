@@ -9,15 +9,11 @@ import Foundation
 import ACRAutoComplete
 
 final class Word: Searchable {
-
     var word: String
+    var keywords: [String] { return [word] }
 
     init(word: String) {
         self.word = word
-    }
-
-    func keywords() -> [String] {
-        return [word]
     }
 }
 

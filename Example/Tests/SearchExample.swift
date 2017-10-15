@@ -8,18 +8,14 @@
 import Foundation
 import ACRAutoComplete
 
-class SearchExample: Searchable {
+final class SearchExample: Searchable {
 
     var name: String
-    var words: [String]
+    var keywords: [String]
 
-    init(name: String, words: [String]) {
+    init(name: String, keywords: [String]) {
         self.name = name
-        self.words = words
-    }
-
-    func keywords() -> [String] {
-        return words
+        self.keywords = keywords
     }
 
     // MARK: - Hashable
