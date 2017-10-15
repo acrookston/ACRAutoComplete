@@ -1,5 +1,5 @@
 PODS:
-  - ACRAutoComplete (0.1.0)
+  - ACRAutoComplete (1.1.0)
 
 DEPENDENCIES:
   - ACRAutoComplete (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACRAutoComplete: cc8c10e01df80b0b8fc1231b8b2dd3c564b36807
+  ACRAutoComplete: 30f4b6277701ac57303ee60b5a26904cb3e2d840
 
-PODFILE CHECKSUM: 844e9449e41cedaaa4f9498a323e1cc78b2c3bfa
+PODFILE CHECKSUM: 33b2e783b08ac7b0796883c88a390cd4c769c8ca
 
-COCOAPODS: 1.1.0.beta.1
+COCOAPODS: 1.2.1

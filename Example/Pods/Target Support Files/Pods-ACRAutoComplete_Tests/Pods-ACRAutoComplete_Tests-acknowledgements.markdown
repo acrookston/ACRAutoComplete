@@ -3,6 +3,8 @@ This application makes use of the following third party libraries:
 
 ## ACRAutoComplete
 
+MIT LICENSE
+
 Copyright (c) 2016 Andrew Crookston <andrew@caoos.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
