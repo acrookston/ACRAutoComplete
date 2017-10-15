@@ -189,6 +189,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				00AAEB2FFCD919397E2594A4 /* [CP] Embed Pods Frameworks */,
 				C1DE6DA371C03E636F9B057F /* [CP] Copy Pods Resources */,
+				A13AF8B61F9364DE003AFB23 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -297,6 +298,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACRAutoComplete_Example/Pods-ACRAutoComplete_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A13AF8B61F9364DE003AFB23 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    exit \"error: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		A45D7830543242AB9B1A0226 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

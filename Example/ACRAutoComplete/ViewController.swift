@@ -119,7 +119,10 @@ final class ViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: LabelCell.identifier) as! LabelCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: LabelCell.identifier) as? LabelCell else {
+            fatalError("wrong cell")
+        }
+
         if searching {
             cell.label.text = results[indexPath.row].word
         } else {
@@ -140,7 +143,7 @@ final class ViewController: UIViewController, UITableViewDataSource, UITableView
     }
 }
 
-func printTimeElapsedWhenRunningCode(title: String, operation:()->Void) {
+func printTimeElapsedWhenRunningCode(title: String, operation:() -> Void) {
     let startTime = CFAbsoluteTimeGetCurrent()
     operation()
     let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime

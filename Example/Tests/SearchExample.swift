@@ -10,11 +10,11 @@ import ACRAutoComplete
 
 class SearchExample: Searchable {
 
-    var id: String
+    var name: String
     var words: [String]
 
-    init(id: String, words: [String]) {
-        self.id = id
+    init(name: String, words: [String]) {
+        self.name = name
         self.words = words
     }
 
@@ -24,9 +24,9 @@ class SearchExample: Searchable {
 
     // MARK: - Hashable
 
-    var hashValue: Int { return id.hashValue }
+    var hashValue: Int { return name.hashValue }
 
     static func == (lhs: SearchExample, rhs: SearchExample) -> Bool {
-        return lhs.id == rhs.id
+        return lhs.name == rhs.name
     }
 }

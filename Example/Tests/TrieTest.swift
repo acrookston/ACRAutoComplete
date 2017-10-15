@@ -26,15 +26,15 @@ class AutoCompleteTest: XCTestCase {
     }
 
     func testSearchShouldFindBall() {
-        let football = SearchExample(id: "Football", words: ["ball"])
+        let football = SearchExample(name: "Football", words: ["ball"])
         trie.insert(football)
 
         XCTAssert(trie.search("Ball").contains(football), "Contains Football")
     }
 
     func testSearchShouldHaveMultipleResults() {
-        let soccer = SearchExample(id: "Soccer", words: ["ball"])
-        let football = SearchExample(id: "Football", words: ["ball"])
+        let soccer = SearchExample(name: "Soccer", words: ["ball"])
+        let football = SearchExample(name: "Football", words: ["ball"])
         trie.insert(set: [soccer, football])
 
         let results = trie.search("ball")
@@ -44,7 +44,7 @@ class AutoCompleteTest: XCTestCase {
 
     func testSearchSearchShouldFindLongerWords() {
         // This tests to make sure "Foot" matches against "Football"
-        let ball = SearchExample(id: "Ball", words: ["football"])
+        let ball = SearchExample(name: "Ball", words: ["football"])
         trie.insert(ball)
 
         XCTAssert(trie.search("Foot").count == 1, "Contains Foot as part of football")
@@ -52,7 +52,7 @@ class AutoCompleteTest: XCTestCase {
 
     func testSearchSearchShouldFindInSeveralWords() {
         // This tests to make sure "Foot" matches against "Football"
-        let smile = SearchExample(id: "Smile", words: ["happy", "silly"])
+        let smile = SearchExample(name: "Smile", words: ["happy", "silly"])
         trie.insert(smile)
 
         XCTAssert(trie.search("ha").count == 1, "Contains happy as partial search ha for happy")
@@ -61,15 +61,15 @@ class AutoCompleteTest: XCTestCase {
 
     func testSearchShouldNotFindShorterWords() {
         // This tests to make sure "Football" does not match against "foot"
-        let ball = SearchExample(id: "Ball", words: ["foot"])
+        let ball = SearchExample(name: "Ball", words: ["foot"])
         trie.insert(ball)
 
         XCTAssert(trie.search("Football").isEmpty, "Does not contain Football")
     }
 
     func testSearchShouldOnlyFindMatchesWhichIncludeAllWords() {
-        let soccer = SearchExample(id: "Soccer", words: ["soccer", "ball"])
-        let football = SearchExample(id: "Football", words: ["foot", "ball"])
+        let soccer = SearchExample(name: "Soccer", words: ["soccer", "ball"])
+        let football = SearchExample(name: "Football", words: ["foot", "ball"])
         trie.insert(set: [soccer, football])
 
         let results = trie.search("foot ball")

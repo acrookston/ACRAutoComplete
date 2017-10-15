@@ -20,7 +20,7 @@ open class AutoComplete<T : Searchable> {
 
     public func insert(_ object: T) {
         for string in object.keywords() {
-            var tokens =  tokenize(string)
+            var tokens = tokenize(string)
             var at = 0
             var max = tokens.count
             insert(&tokens, at: &at, max: &max, object: object)
@@ -28,9 +28,7 @@ open class AutoComplete<T : Searchable> {
     }
 
     private func insert(_ tokens: inout [Character], at: inout Int, max: inout Int, object: T) {
-
         if at < max {
-
             let current = tokens[at]
             at += 1
 
@@ -43,7 +41,6 @@ open class AutoComplete<T : Searchable> {
             }
 
             nodes![current]!.insert(&tokens, at: &at, max: &max, object: object)
-
         } else {
             if items == nil {
                 items = [T]()
@@ -64,7 +61,8 @@ open class AutoComplete<T : Searchable> {
         for word in string.components(separatedBy: " ") {
             var wordResults = Set<T>()
             var tokens = tokenize(word)
-            find(&tokens, into: &wordResults)
+            var at = 0
+            find(&tokens, at: &at, into: &wordResults)
             if mergedResults == nil {
                 mergedResults = wordResults
             } else {
@@ -82,28 +80,24 @@ open class AutoComplete<T : Searchable> {
             }
         }
 
-        guard let nodes = nodes else {
-            return
-        }
+        guard let nodes = nodes else { return }
 
         for (_, child) in nodes {
             child.insertAll(into: &results)
         }
     }
 
-    private func find(_ tokens : inout [Character], into results: inout Set<T>) {
+    private func find(_ tokens: inout [Character], at: inout Int, into results: inout Set<T>) {
         guard tokens.count > 0 else {
             insertAll(into: &results)
             return
         }
+        guard let nodes = nodes else { return }
 
-        guard let nodes = nodes else {
-            return
-        }
+        let current = tokens[at]
+        at += 1
 
-        let current = tokens.remove(at: 0)
-
-        nodes[current]?.find(&tokens, into: &results)
+        nodes[current]?.find(&tokens, at: &at, into: &results)
     }
 
     private func tokenize(_ string: String) -> [Character] {
