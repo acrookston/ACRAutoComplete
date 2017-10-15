@@ -2,10 +2,10 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode8
+osx_image: xcode9
 xcode_workspace: Example/ACRAutoComplete.xcworkspace
 xcode_scheme: ACRAutoComplete-Example
-xcode_sdk: iphonesimulator10.1
+xcode_sdk: iphoneos11.0
 language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
