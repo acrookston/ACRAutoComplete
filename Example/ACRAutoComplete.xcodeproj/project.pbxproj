@@ -51,6 +51,7 @@
 		834046B8923CE89D921E8393 /* ACRAutoComplete.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACRAutoComplete.podspec; path = ../ACRAutoComplete.podspec; sourceTree = "<group>"; };
 		A1336EBB1D9133B50017DE22 /* TrieTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieTest.swift; sourceTree = "<group>"; };
 		A1336EBF1D9133E10017DE22 /* SearchExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchExample.swift; sourceTree = "<group>"; };
+		A13AF8B71F94111C003AFB23 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		A169BEE31DCE98FB00DA1EC3 /* sowpods.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sowpods.txt; sourceTree = "<group>"; };
 		A169BEE71DCE9C5800DA1EC3 /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		A169BEE91DCEA53000DA1EC3 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
@@ -161,6 +162,7 @@
 				834046B8923CE89D921E8393 /* ACRAutoComplete.podspec */,
 				A22B04C59B42B9B2EF6EBCED /* README.md */,
 				DAEACBFDF3FA50D4F3BCC8D9 /* LICENSE */,
+				A13AF8B71F94111C003AFB23 /* CHANGELOG.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";

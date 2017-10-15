@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ACRAutoComplete'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'An auto-complete library written in Swift for iOS using the trie data structure'
 
   s.description      = <<-DESC
