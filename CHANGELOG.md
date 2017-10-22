@@ -2,7 +2,7 @@
 
 ### 1.1.1 - 2017-10-21
 
-- Updated code to be clear SwiftLint
+- Updated code to clear SwiftLint checks
 
 ### 1.1.0 - 2017-10-15
 
