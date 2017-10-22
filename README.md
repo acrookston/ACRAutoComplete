@@ -31,10 +31,22 @@ Tweet me if you like this library, have questions or feedback.
 
 ## Contributing
 
-Any contributions should be submitted as pull-requests. Please make sure the tests are passing before submitting.
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+Bug reports and pull requests are welcome via GitHub at https://github.com/acrookston/ACRAutoComplete.
+
+You will need [SwiftLint](https://github.com/realm/SwiftLint) installed for the build process to pass.
+
+If you're making a big change, please open an Issue first, so we can discuss. Otherwise:
+
+- Fork the repo
+- Open `Example/ACRAutoComplete.workspace`
+- Make your changes
+- Confirm tests are passing
+- Confirm no SwiftLint passes (no Xcode warnings).
 
 
-## Example
+## Example Project
 
 The Example project contains a fully working implementation with a simple user interface to search the SOWPODS word list.
 
