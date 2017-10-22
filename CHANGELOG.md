@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### 1.1.1 - 2017-10-21
+
+- Updated code to be clear SwiftLint
+
 ### 1.1.0 - 2017-10-15
 
 - API change: method `keywords() -> [String]` is now a property `var keywords: [String] { get }`.
