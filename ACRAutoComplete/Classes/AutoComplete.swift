@@ -11,8 +11,8 @@ public protocol Searchable: Hashable {
     var keywords: [String] { get }
 }
 
-open class AutoComplete<T : Searchable> {
-    lazy var nodes = [Character : AutoComplete<T>]()
+open class AutoComplete<T: Searchable> {
+    lazy var nodes = [Character: AutoComplete<T>]()
     lazy var items = [T]()
 
     public init() { }
@@ -22,22 +22,25 @@ open class AutoComplete<T : Searchable> {
     public func insert(_ object: T) {
         for string in object.keywords {
             var tokens = tokenize(string)
-            var at = 0
-            var max = tokens.count
-            insert(&tokens, at: &at, max: &max, object: object)
+            var currentIndex = 0
+            var maxIndex = tokens.count
+            insert(tokens: &tokens, at: &currentIndex, max: &maxIndex, object: object)
         }
     }
 
-    private func insert(_ tokens: inout [Character], at: inout Int, max: inout Int, object: T) {
-        if at < max {
-            let current = tokens[at]
-            at += 1
+    private func insert(tokens: inout [Character],
+                        at currentIndex: inout Int,
+                        max maxIndex: inout Int,
+                        object: T) {
+        if currentIndex < maxIndex {
+            let current = tokens[currentIndex]
+            currentIndex += 1
 
             if nodes[current] == nil {
                 nodes[current] = AutoComplete<T>()
             }
 
-            nodes[current]?.insert(&tokens, at: &at, max: &max, object: object)
+            nodes[current]?.insert(tokens: &tokens, at: &currentIndex, max: &maxIndex, object: object)
         } else {
             items.append(object)
         }
@@ -57,9 +60,9 @@ open class AutoComplete<T : Searchable> {
         for word in string.components(separatedBy: " ") {
             var wordResults = Set<T>()
             var tokens = tokenize(word)
-            var count = tokens.count
-            var at = 0
-            find(&tokens, at: &at, max: &count, into: &wordResults)
+            var maxIndex = tokens.count
+            var currentIndex = 0
+            find(tokens: &tokens, at: &currentIndex, max: &maxIndex, into: &wordResults)
             if let results = merged {
                 merged = results.intersection(wordResults)
             } else {
@@ -73,11 +76,14 @@ open class AutoComplete<T : Searchable> {
         return []
     }
 
-    private func find(_ tokens: inout [Character], at: inout Int, max: inout Int, into results: inout Set<T>) {
-        if at < max {
-            let current = tokens[at]
-            at += 1
-            nodes[current]?.find(&tokens, at: &at, max: &max, into: &results)
+    private func find(tokens: inout [Character],
+                      at currentIndex: inout Int,
+                      max maxIndex: inout Int,
+                      into results: inout Set<T>) {
+        if currentIndex < maxIndex {
+            let current = tokens[currentIndex]
+            currentIndex += 1
+            nodes[current]?.find(tokens: &tokens, at: &currentIndex, max: &maxIndex, into: &results)
         } else {
             insertAll(into: &results)
         }
