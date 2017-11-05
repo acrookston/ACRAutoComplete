@@ -100,6 +100,6 @@ open class AutoComplete<T: Searchable> {
     }
 
     private func tokenize(_ string: String) -> [Character] {
-        return Array(string.lowercased().characters)
+        return Array(string.lowercased())
     }
 }
