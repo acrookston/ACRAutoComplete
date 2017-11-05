@@ -76,4 +76,27 @@ class AutoCompleteTest: XCTestCase {
         XCTAssert(results.count == 1, "Only contains one result")
         XCTAssert(results.first == football, "Contains Football")
     }
+
+    func testIndexPerformance() {
+        let testBundle = Bundle(for: type(of: self))
+        guard let path = testBundle.path(forResource: "sowpods", ofType: "txt") else {
+            fatalError("can't locate sowpods.txt in bundle")
+        }
+
+        var words = [Word]()
+
+        do {
+            let data = try String(contentsOfFile: path, encoding: .utf8)
+            data.components(separatedBy: .newlines).forEach({
+                words.append(Word(word: $0))
+            })
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+
+        self.measure {
+            let search = AutoComplete<Word>()
+            search.insert(words)
+        }
+    }
 }

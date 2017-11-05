@@ -12,7 +12,6 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A1336EBC1D9133B50017DE22 /* TrieTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1336EBB1D9133B50017DE22 /* TrieTest.swift */; };
 		A1336EC01D9133E10017DE22 /* SearchExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1336EBF1D9133E10017DE22 /* SearchExample.swift */; };
 		A169BEE41DCE98FB00DA1EC3 /* sowpods.txt in Resources */ = {isa = PBXBuildFile; fileRef = A169BEE31DCE98FB00DA1EC3 /* sowpods.txt */; };
@@ -20,6 +19,7 @@
 		A169BEE61DCE998000DA1EC3 /* SearchExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1336EBF1D9133E10017DE22 /* SearchExample.swift */; };
 		A169BEE81DCE9C5800DA1EC3 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A169BEE71DCE9C5800DA1EC3 /* LabelCell.swift */; };
 		A169BEEA1DCEA53000DA1EC3 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A169BEE91DCEA53000DA1EC3 /* Word.swift */; };
+		A1CA0DAA1FAE902B00769816 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A169BEE91DCEA53000DA1EC3 /* Word.swift */; };
 		BF3108B0AA81A8B02B419DD8 /* Pods_ACRAutoComplete_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CFDE2AF35ADD59F27EB2FE /* Pods_ACRAutoComplete_Example.framework */; };
 		CF8EBB5AE8D172F7C0832938 /* Pods_ACRAutoComplete_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F639E4FF19657D4801B28 /* Pods_ACRAutoComplete_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -46,7 +46,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ACRAutoComplete_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACRAutoComplete_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7CD2C8B437664F30EA53C9FF /* Pods-ACRAutoComplete_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRAutoComplete_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRAutoComplete_Example/Pods-ACRAutoComplete_Example.release.xcconfig"; sourceTree = "<group>"; };
 		834046B8923CE89D921E8393 /* ACRAutoComplete.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACRAutoComplete.podspec; path = ../ACRAutoComplete.podspec; sourceTree = "<group>"; };
 		A1336EBB1D9133B50017DE22 /* TrieTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieTest.swift; sourceTree = "<group>"; };
@@ -141,7 +140,6 @@
 			children = (
 				A1336EBF1D9133E10017DE22 /* SearchExample.swift */,
 				A1336EBB1D9133B50017DE22 /* TrieTest.swift */,
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -409,7 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				A1CA0DAA1FAE902B00769816 /* Word.swift in Sources */,
 				A1336EC01D9133E10017DE22 /* SearchExample.swift in Sources */,
 				A1336EBC1D9133B50017DE22 /* TrieTest.swift in Sources */,
 			);
