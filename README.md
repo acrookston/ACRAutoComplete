@@ -41,9 +41,10 @@ If you're making a big change, please open an Issue first, so we can discuss. Ot
 
 - Fork the repo
 - Open `Example/ACRAutoComplete.workspace`
-- Make your changes
+- Make your changes and add tests
 - Confirm tests are passing
-- Confirm no SwiftLint passes (no Xcode warnings).
+- Confirm that SwiftLint passes (no Xcode warnings).
+- Create a pull-request on Github.
 
 
 ## Example Project
