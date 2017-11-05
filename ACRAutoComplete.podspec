@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ACRAutoComplete'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'An auto-complete library written in Swift for iOS using the trie data structure'
 
   s.description      = <<-DESC
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/acrookston/ACRAutoComplete'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Andrew Crookston' => 'andrew@caoos.com' }
   s.source           = { :git => 'https://github.com/acrookston/ACRAutoComplete.git', :tag => s.version.to_s }
+  s.author           = { 'Andrew Crookston' => 'andrew@caoos.com' }
   s.social_media_url = 'https://twitter.com/acr'
 
   s.ios.deployment_target = '8.0'
